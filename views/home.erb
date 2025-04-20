@@ -1,0 +1,8 @@
+<h1>Currency pairs</h1>
+<ul>
+  <% @currencies.each do |ccy| %>
+  <li>
+    <a href="/<%= ccy %>"> Convert 1 <%= ccy%> to...</a>
+  </li>
+  <% end %>
+</ul>

@@ -1,0 +1,10 @@
+<h1> Convert <%= @from_ccy %></h1>
+
+<p> Go <a href="/"> back</a>.</p>
+<ul>
+  <% @currencies.each do |ccy| %>
+  <li>
+    <a href="/<%= @from_ccy %>/<%= ccy%>"> Convert 1 <%= @from_ccy %> to <%= ccy %>...</a>
+  </li>
+  <% end %>
+</ul>
